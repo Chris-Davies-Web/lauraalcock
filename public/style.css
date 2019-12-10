@@ -1,0 +1,10 @@
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(#F0E5EB 0%, #FDEBDA 100%);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . .";
+  }
