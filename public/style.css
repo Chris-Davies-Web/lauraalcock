@@ -1,10 +1,100 @@
 body{
     background: rgb(0,0,0);
     background: linear-gradient(#F0E5EB 0%, #FDEBDA 100%);
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+/** DESKTOP - GRID STRUCTURE **/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . .";
   }
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.header p:nth-of-type(1){
+    grid-column-start: 1;
+    grid-column-end: span 1;
+}
+
+.header p:nth-of-type(2){
+    grid-column-start: 2;
+    grid-column-end: span 1;
+}
+
+.header p:nth-of-type(3){
+    grid-column-start: 3;
+    grid-column-end: span 1;
+}
+
+.circle{
+    grid-column-start: 8;
+    grid-column-end: span 5;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.title{
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.title span{
+    
+}
+
+.bio{
+    grid-column-start: 3;
+    grid-column-end: span 7;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+.recent-work{
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+
+.art-direction{
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 6;
+    grid-row-end: span 1;
+}
+
+/** PAGE STYLES **/
+.header .logo{
+    height: 62px;
+    width: 140px;
+    background-image: url(./img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header{
+    color: #2B3640;
+    font-size: 20px;
+}
