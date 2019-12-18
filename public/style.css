@@ -8,7 +8,7 @@ body{
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 219px 1fr 1fr 1fr;
     grid-template-areas: ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . .";
   }
 
@@ -53,10 +53,6 @@ body{
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.title span{
-    
-}
-
 .bio{
     grid-column-start: 3;
     grid-column-end: span 7;
@@ -86,6 +82,8 @@ body{
 }
 
 /** PAGE STYLES **/
+
+/* Header and Title */
 .header .logo{
     height: 62px;
     width: 140px;
@@ -97,4 +95,92 @@ body{
 .header{
     color: #2B3640;
     font-size: 20px;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.title span{
+    font-size: 200px;
+    color: white;
+    font-weight: 100;
+    line-height: 180px;
+    opacity: 0.8;
+}
+
+.title span:first-of-type{
+    background: #DEDA6D;
+    padding-left: 20px;
+    margin-left: -20px;
+    width: 520px;
+}
+
+.header p:not(.logo){
+    height: 31px;
+    margin-top: 38px;
+}
+
+
+/** Circle **/
+.circle{
+    background: #2B3640;
+    height: 600px;
+    border-radius: 100%;
+    left: 100px;
+    position: relative;
+    top: -100px;
+    width: 600px;
+}
+
+.inner-circle{
+    position: absolute;
+    height: 92px;
+    width: 92px;
+    border-radius: 100%;
+    background: #FF6767;
+    bottom: 8px;
+    left: 195px;
+}
+
+/* Bio */
+.bio p{
+    height: 275px;
+    width: 521px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 34px;
+    color: #2B3640;
+    margin: auto;
+}
+
+.bio .bio-container{
+    margin: auto;
+    text-align: center;
+}
+
+.bio .buttons{
+    margin-top: 30px;
+    left: -30px;
+    position: relative;
+}
+
+.bio .buttons button{
+    width: 217px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.bio .buttons button:first-of-type{
+    color:white;;
+    background: #FF6767;
+    border: solid 1px #FF6767;
+    margin-right: 20px;
+}
+
+.bio .buttons button:last-of-type{
+    color:#2B3640;
+    border: solid 1px #2B3640;
+
 }
